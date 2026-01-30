@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete My Data - One Month</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 { color: #dc2626; }
+        h2 { color: #1e40af; margin-top: 30px; }
+        .warning {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        .warning strong { color: #dc2626; }
+        .info {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        form {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .btn {
+            background: #dc2626;
+            color: white;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn:hover { background: #b91c1c; }
+        .btn:disabled { background: #9ca3af; cursor: not-allowed; }
+        a { color: #2563eb; }
+        ul { margin: 10px 0; }
+        li { margin: 8px 0; }
+    </style>
+</head>
+<body>
+    <h1>🗑️ Delete My Data</h1>
+    <p><a href="index.html">← Back to Privacy Policy</a></p>
+
+    <p>We respect your right to control your personal data. Use this page to request the deletion of your One Month account and all associated data.</p>
+
+    <div class="warning">
+        <strong>⚠️ Warning:</strong> Data deletion is permanent and cannot be undone. You will lose:
+        <ul>
+            <li>Your account and profile information</li>
+            <li>All learning progress and statistics</li>
+            <li>Completed lessons and quiz scores</li>
+            <li>Any premium subscription benefits (subscription itself managed via Google Play)</li>
+        </ul>
+    </div>
+
+    <h2>What data do we delete?</h2>
+    <ul>
+        <li><strong>Account data:</strong> Email, display name, avatar</li>
+        <li><strong>Progress data:</strong> Completed days, learned words, quiz scores</li>
+        <li><strong>Statistics:</strong> Streaks, achievements, learning history</li>
+        <li><strong>Preferences:</strong> Notification settings, theme preferences</li>
+    </ul>
+
+    <div class="info">
+        <strong>ℹ️ Note:</strong> If you have an active premium subscription, please cancel it through Google Play Store before requesting deletion. We cannot process refunds for subscriptions.
+    </div>
+
+    <h2>Request Data Deletion</h2>
+    
+    <form id="deleteForm" action="https://formsubmit.co/[YOUR_EMAIL]" method="POST">
+        <input type="hidden" name="_subject" value="Data Deletion Request - One Month App">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://[YOUR_USERNAME].github.io/onemonth-privacy/confirmation.html">
+        
+        <label for="email">Email address associated with your account *</label>
+        <input type="email" id="email" name="email" required placeholder="your@email.com">
+
+        <label for="reason">Reason for deletion (optional)</label>
+        <textarea id="reason" name="reason" rows="3" placeholder="Help us improve by telling us why you're leaving..."></textarea>
+
+        <div class="checkbox-label">
+            <input type="checkbox" id="confirm" required>
+            <label for="confirm" style="margin-bottom: 0;">I understand that this action is permanent and all my data will be deleted within 30 days.</label>
+        </div>
+
+        <button type="submit" class="btn">Request Data Deletion</button>
+    </form>
+
+    <h2>Processing Time</h2>
+    <p>Data deletion requests are processed within <strong>30 days</strong>. You will receive a confirmation email once your data has been deleted.</p>
+
+    <h2>Questions?</h2>
+    <p>If you have any questions about data deletion, contact us at: <strong>yota34wa@gmail.com</strong></p>
+
+    <hr>
+    <p style="text-align: center; color: #666;">© 2025 One Month. All rights reserved.</p>
+</body>
+</html>
